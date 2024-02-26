@@ -24,7 +24,7 @@ const App = () => {
         const data = await getImages(query, page);
         const { hits: newImages } = data;
         setImages(prev => [...prev, ...newImages]);
-        setLoadMore(page < Math.ceil(data.totalHits / 12));
+        setLoadMore(page < Math.ceil(data.totalHits / 15));
         setIsEmpty(
           prev => newImages?.length === 0 && prev.images?.length === 0
         );

@@ -4,7 +4,7 @@ const Key = '40878380-6ee06a62f90a8337fbd0b4096';
 
 const getImages = async (query, page) => {
   const { data } = await axios.get(
-    `${BASE_URL}?q=${query}&page=${page}&key=${Key}&image_type=photo&orientation=horizontal&per_page=12`
+    `${BASE_URL}?q=${query}&page=${page}&key=${Key}&image_type=photo&orientation=horizontal&per_page=15`
   );
   return data;
 };
